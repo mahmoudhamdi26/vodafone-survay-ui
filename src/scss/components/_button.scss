@@ -1,0 +1,24 @@
+.button{
+    a{
+        display: inline-flex;
+        align-items: center;
+        width: 171px;
+        height: 45px;
+        border-radius: 3px;
+        box-shadow: 0 7px 10px 0 rgba(252, 210, 47, 0.25);
+        background-color: #fcd22f;
+        padding: 13px 20px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2.29;
+        .icon-arrow:before {
+            content: "\e903";
+            color: #fff;
+            font-size: 1rem;
+            margin-right: 40px;
+          }
+    }
+}

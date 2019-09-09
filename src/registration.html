@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="img/png" href="img/takadom-icon.png"/>
+    <title>Takadom</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="col-12">
+                <i id="openSideMenu" class="icon-bar"></i>
+                <div class="vodafone-logo">
+                    <div>
+                       <span>ممول من</span>
+                       <img src="img/vodafone-logo.png" alt="vodafone-logo"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="row">
+        <div class="col-3">
+            <aside>
+                <i id="closeSideMenu" class="icon-exit"></i>
+                <div class="takadom-logo">
+                    <img src="img/takadom-logo.png" alt="takadom-logo"/>
+                </div>
+                <div class="outer-spinner">
+                    <div class="chart" id="graph" data-line="5" data-percent="5"></div>
+                    <span class="percent">%</span>
+                    <span class="step">مرحلة 1 من 3</span>
+                </div>
+                <ul>
+                    <li class="active"><i class="icon-student"></i>التسجيل</li>
+                    <li><i class="icon-brain"></i>القسم الأول<span>التقدير الكيفى لسلوك الطالب</span></li>
+                    <li><i class="icon-report"></i>القسم الثانى<span>التقدير الكمي لسلوك الطالب</span></li>
+                </ul>
+                <div class="footer">
+                    <div class="company">
+                        <span>تم التصميم والتطوير بواسطة</span>
+                        <a href=""><img src="img/fritill-logo.png" alt="fritill logo"></a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div id="mainBody" class="col-12 col-md-9">
+            <main class="registration">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="info">
+                            <div class="img-container">
+                                <img src="img/regestration.svg" alt="registration image">
+                            </div>
+                            <h1>تسجيل البيانات</h1>
+                            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
+                            <div class="button">
+                                <a id="nextPage" href="#"> التالى<i class="icon-arrow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+
+
+    <script src="http://localhost:35729/livereload.js"></script>
+    <script src="js/jQuery_3.4.1.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+            function setRequest() {
+                var xmlHttp;
+                if (window.XMLHttpRequest)
+                    xmlHttp = new XMLHttpRequest();
+                else {
+                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                return xmlHttp;
+            }
+            function ajax(page) {
+                var xmlHttp = setRequest();
+                xmlHttp.onreadystatechange = function () {
+                    $("#mainBody").innerHTML = ' <div class="spinner"><div class="spinner-circle"></div></div>';
+                    if (this.readyState == 4 && this.status == 200) {
+                        $("#mainBody").innerHTML = this.responseText;
+                    }
+                };
+                xmlHttp.open("GET",page,true);
+                xmlHttp.send();
+            }
+            $('#nextPage').click(function () {
+                $('#mainBody').load('registration1.html',function (rt,ts,xhr) {
+                    if (xhr.readyState < 4){
+                        $('#mainBody').html('<div class="spinner"><div class="spinner-circle"></div></div>');
+                    }
+                    if ( ts == "error"){
+                        $('#mainBody').html('Sorry There is Error' +xhr.status+' '+xhr.statusText );
+                    }
+                });
+            })
+        </script>
+</body>
+</html>

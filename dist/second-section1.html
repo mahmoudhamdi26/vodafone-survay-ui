@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="img/png" href="img/takadom-icon.png"/>
+    <title>Takadom</title>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+    <header>
+        <div class="row">
+            <i id="openSideMenu" class="icon-bar"></i>
+            <div class="col-6">
+                <div class="section-name">
+                    <span> القسم الثانى</span>
+                    <h4>التقدير الكمى لسلوك الطالب</h4>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="vodafone-logo">
+                    <div>
+                       <span>ممول من</span>
+                       <img src="img/vodafone-logo.png" alt="vodafone-logo"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="row">
+        <div class="col-3">
+            <aside>
+                <i id="closeSideMenu" class="icon-exit"></i>
+                <div class="takadom-logo">
+                    <img src="img/takadom-logo.png" alt="takadom-logo"/>
+                </div>
+                <div class="outer-spinner">
+                    <div class="chart" id="graph" data-line="5" data-percent="68"></div>
+                    <span class="percent">%</span>
+                    <span class="step">مرحلة 3 من 3</span>
+                </div>
+                <ul>
+                    <li><i class="icon-student"></i>التسجيل</li>
+                    <li><i class="icon-brain"></i>القسم الأول<span>التقدير الكيفى لسلوك الطالب</span></li>
+                    <li class="active"><i class="icon-report"></i>القسم الثانى<span>التقدير الكمي لسلوك الطالب</span></li>
+                </ul>
+                <div class="footer">
+                    <div class="company">
+                        <span>تم التصميم والتطوير بواسطة</span>
+                        <a href=""><img src="img/fritill-logo.png" alt="fritill logo"></a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="col-12 col-md-9">
+                <main class="second-section">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="info">
+                                <form action="">
+                                    <div id="question-form">
+                                        <h1>يجد صعوبة في ترتيب أدواتة أو أداء الأنشطة في تتابع ونظام</h1>
+                                        <div class="form-group">
+                                            <input type="radio" class="custom-control-input" id="never" name="answer">
+                                            <label class="custom-control-label" for="never">أبداً</label>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="radio" class="custom-control-input" id="someTime" name="answer">
+                                            <label class="custom-control-label" for="someTime">أحياناً</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="radio" class="custom-control-input" id="always" name="answer">
+                                            <label class="custom-control-label" for="always"> دائماً</label>
+                                        </div>
+                                    </div>
+                                    <div class="button">
+                                        <a id="next" href="#"> التالى<i class="icon-arrow"></i></a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+        </div>
+    </section>
+
+
+    <script src="http://localhost:35729/livereload.js"></script>
+    <script src="js/jQuery_3.4.1.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+            function setRequest() {
+                var xmlHttp;
+                if (window.XMLHttpRequest)
+                    xmlHttp = new XMLHttpRequest();
+                else {
+                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                return xmlHttp;
+            }
+            function ajax(page) {
+                var xmlHttp = setRequest();
+                xmlHttp.onreadystatechange = function () {
+                    $("#question-form").innerHTML = ' <div class="spinner"><div class="spinner-circle"></div></div>';
+                    if (this.readyState == 4 && this.status == 200) {
+                        $("#question-form").innerHTML = this.responseText;
+                    }
+                };
+                xmlHttp.open("GET",page,true);
+                xmlHttp.send();
+            }
+            $('#next').click(function () {
+                $('#question-form').load('second-section-question.html',function (rt,ts,xhr) {
+                    if (xhr.readyState < 4){
+                        $('#question-form').html('<div class="spinner"><div class="spinner-circle"></div></div>');
+                    }
+                    if ( ts == "error"){
+                        $('#question-form').html('Sorry There is Error' +xhr.status+' '+xhr.statusText );
+                    }
+                });
+            })
+        </script>
+</body>
+</html>

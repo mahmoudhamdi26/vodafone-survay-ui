@@ -1,0 +1,65 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  // outline: 1px solid rgba(#abc, 0.05);
+}
+
+html {
+  font-size: 62.5%;
+  font-size: 10px;
+  @media (max-width: 575.98px) {
+    font-size: 9px;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 16px;
+  position: relative;
+  overflow-x: hidden;
+  cursor: default;
+  font-weight: normal;
+  background-color: #fff;
+  direction: rtl;
+}
+
+html[dir="rtl"] {
+  font-family: 'GESSTextLight','GE_SS_Unique_Light', 'Cairo', sans-serif;
+}
+
+a,
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+input,select,textarea{
+  transition: all 0.20s ease-in-out;
+}
+input:focus, select:focus, textarea:focus{
+  outline: none;
+}
+input:focus, select:focus ,textarea:focus{
+  box-shadow: 0 0 2px rgba(#0e8efd, 1);
+  padding: 3px 0px 3px 3px;
+  border: 1px solid rgba(#0e8efd, 1);
+}

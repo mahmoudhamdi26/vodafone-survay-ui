@@ -1,0 +1,50 @@
+footer{
+    border: solid 1px #e6e6e6;
+    background-color: rgba(#d7d7d7, 0.2);
+    padding: 15px 75px 15px 100px;
+    .rights{
+        text-align: right;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        p{
+            font-size: 12px;
+            font-weight: 500;
+            text-align: right;
+            color: #818181;
+        }
+    }
+    .company{
+        text-align: left;
+        position: relative;
+        span{
+            font-size: 8px;
+            font-weight: 800;
+            line-height: 1.38;
+            color: #707070;
+        }
+        img{
+            width: 49px;
+            height: 17px;
+            position: absolute;
+            top: 1px;
+            margin-right: 5px;
+        }
+    }
+    @media (max-width: 767px){
+        padding: 15px 20px 15px 70px;
+        .rights{
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+    @media (min-width: 768px) and (max-width: 991px){
+        padding: 15px 30px 15px 80px;
+        .rights{
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+}

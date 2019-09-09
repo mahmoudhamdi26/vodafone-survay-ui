@@ -1,0 +1,7 @@
+/**
+ * @Project        takadom
+ * @Author         Mahmoud Wageeh
+ * @Job Title      Front-End-Developer
+ * @Build          Mon, Sep 9, 2019 12:20 PM ET
+ **/
+"use strict";jQuery(document).ready(function(){var e=document.getElementById("graph"),t={percent:e.getAttribute("data-percent")||25,size:e.getAttribute("data-size")||300,lineWidth:e.getAttribute("data-line")||5,rotate:e.getAttribute("data-rotate")||0};$("#next").click(function(e){e.preventDefault(),$("#question-form").fadeOut().fadeIn(),t.percent=parseInt(t.percent)+1,t.percent<=100&&(i.textContent=t.percent,r("#eee",t.lineWidth,1),r("#0e8efd",t.lineWidth,t.percent/100))}),console.log(t.percent);var n=document.createElement("canvas"),i=document.createElement("span");i.textContent=t.percent;var a=n.getContext("2d");n.width=n.height=t.size,e.appendChild(i),e.appendChild(n),a.translate(t.size/2,t.size/2),a.rotate((t.rotate/180-.5)*Math.PI);var c=(t.size-t.lineWidth)/4,r=function(e,t,n){n=Math.min(Math.max(0,n||1),1),a.beginPath(),a.arc(0,0,c,0,2*Math.PI*n,!1),a.strokeStyle=e,a.lineCap="round",a.lineWidth=t,a.stroke()};r("#eee",t.lineWidth,1),r("#0e8efd",t.lineWidth,t.percent/100),$("#selectYes").click(function(){$("#selectExam").fadeIn()}),$(document).mouseup(function(e){0===$(e.target).closest("#selectYes").length&&$("#selectExam").fadeOut()}),$("#openSideMenu").click(function(){$("aside").css({right:0})}),$("#closeSideMenu").click(function(){$("aside").css({right:-350})}),$("#datepicker").datepicker()});

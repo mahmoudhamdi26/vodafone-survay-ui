@@ -1,0 +1,31 @@
+{
+  "name": "takadom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Mahmoud Wageeh",
+  "jobTitle": "Front-End-Developer",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-cache": "^1.1.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^2.0.9",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-livereload": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "moment": "^2.24.0"
+  },
+  "dependencies": {
+    "static-server": "^2.2.1"
+  }
+}

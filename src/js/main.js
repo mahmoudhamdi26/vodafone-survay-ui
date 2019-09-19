@@ -6,7 +6,8 @@ jQuery(document).ready(function() {
     percent: el.getAttribute("data-percent") || 25,
     size: el.getAttribute("data-size") || 300,
     lineWidth: el.getAttribute("data-line") || 5,
-    rotate: el.getAttribute("data-rotate") || 0
+    rotate: el.getAttribute("data-rotate") || 0,
+    color: el.getAttribute("data-color") || '#0e8efd'
   };
     if (questionContainer) {
         var nextValue = questionContainer.getAttribute("data-value"),
@@ -30,7 +31,7 @@ jQuery(document).ready(function() {
     if (options.percent <= 100) {
       span.textContent = options.percent;
       drawCircle("#eee", options.lineWidth, 100 / 100);
-      drawCircle("#0e8efd", options.lineWidth, options.percent / 100);
+      drawCircle(options.color, options.lineWidth, options.percent / 100);
     }
   });
 
@@ -61,7 +62,7 @@ jQuery(document).ready(function() {
   };
 
   drawCircle("#eee", options.lineWidth, 100 / 100);
-  drawCircle("#0e8efd", options.lineWidth, parseInt(options.percent) / 100);
+  drawCircle(options.color, options.lineWidth, parseInt(options.percent) / 100);
   //////////////////////////////////
   $("#selectYes").click(() => {
     $("#selectExam").fadeIn();
@@ -81,4 +82,20 @@ jQuery(document).ready(function() {
   // $('body').click(() => {
   //     $('#selectExam').fadeOut();
   // });
+  // Scrollbar for The Left Side if it needed
+  $('.nice-scroll').niceScroll({
+    railalign: document.dir === "rtl" ? 'left' : 'right',
+    rtlmode: document.dir === "rtl" ? true : false,
+    hwacceleration: document.dir === "rtl" ? false : true,
+    cursoropacitymax: 0.5,
+    cursorwidth: "5px"
+  });
+  var width = $(window).width();
+
+  //////////////////// store screen width /////////
+  if (width < 768) {
+    $("aside").removeClass("nice-scroll");
+    console.log("jjj");
+    
+  }
 });

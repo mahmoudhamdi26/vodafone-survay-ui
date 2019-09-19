@@ -12,38 +12,31 @@
     <header>
         <div class="row">
             <i id="openSideMenu" class="icon-bar"></i>
-            <div class="col-6">
-                <div class="section-name">
-                    <span> القسم الأول</span>
-                    <h4>التقدير الكيفي لسلوك الطالب</h4>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="vodafone-logo">
-                    <div>
-                       <span>ممول من</span>
-                       <img src="img/vodafone-logo.png" alt="vodafone-logo"/>
-                    </div>
+            <div class="col-12">
+                <div class="takadom-logo">
+                    <img src="img/takadom-logo.png" alt="takadom-logo">
                 </div>
             </div>
         </div>
     </header>
     <section class="row">
         <div class="col-3">
-            <aside>
+            <aside class="nice-scroll">
                 <i id="closeSideMenu" class="icon-exit"></i>
-                <div class="takadom-logo">
-                    <img src="img/takadom-logo.png" alt="takadom-logo"/>
+                <div class="talemy-logo">
+                    <img src="img/talemy-logo.png" alt="talemy logo" />
                 </div>
                 <div class="outer-spinner">
-                    <div class="chart" id="graph" data-line="5" data-percent="36"></div>
+                    <div class="chart" id="graph" data-color="#0e8efd" data-line="5" data-percent="36"></div>
                     <span class="percent">%</span>
-                    <span class="step">مرحلة 2 من 3</span>
+                    <span class="step">مرحلة 1 من 5</span>
                 </div>
                 <ul>
-                    <li><i class="icon-student"></i>التسجيل</li>
-                    <li class="active"><i class="icon-brain"></i>القسم الأول<span>التقدير الكيفى لسلوك الطالب</span></li>
-                    <li><i class="icon-report"></i>القسم الثانى<span>التقدير الكمي لسلوك الطالب</span></li>
+                    <li class="active1"><i class="icon-boy"></i> أولاً:<span>الصعوبات السلوكية والانفعالية</span></li>
+                    <li><i class="icon-brain"></i> ثانياً :<span>الصعوبات المعرفية</span></li>
+                    <li><i class="icon-book"></i>ثالثاً :<span>صعوبات تعلم القراءة</span></li>
+                    <li><i class="icon-write"></i>رابعاً :<span>صعوبات تعلم الكتابة</span></li>
+                    <li><i class="icon-minus"></i>خامساً :<span>صعوبات تعلم الحساب</span></li>
                 </ul>
                 <div class="footer">
                     <div class="company">
@@ -60,7 +53,7 @@
                             <div class="info">
                                 <form action="">
                                     <div id="question-form"  data-value="20" data-view="0">
-                                        <h1>هل تم تطبيق اختبار ذكاء مقنن علي الطالب من قبل؟</h1>
+                                        <h1 style="color:#0e8efd">يجد صعوبة في أداء ما يُكلف به من مهام في تتابع ونظام</h1>
                                         <div class="form-group">
                                             <input type="radio" class="custom-control-input" id="yes" name="exam">
                                             <label class="custom-control-label" id="selectYes" for="yes">نعم</label>
@@ -74,18 +67,21 @@
                                             <input type="radio" class="custom-control-input" id="notSure" name="exam">
                                             <label class="custom-control-label" for="notSure">غير متأكد</label>
                                         </div>
-                                        <div class="select-exam" id="selectExam">
-                                            <p>تظهر عند إختيار الإجابة بنعم برجاء تحديد الاختبار والدرجة التي حصل عليها</p>
-                                        </div>
                                     </div>
                                     <div class="button">
-                                        <a id="next" href="#"> التالى<i class="icon-arrow"></i></a>
+                                        <a style="background:#0e8efd" id="next" href="second-section.html"> التالى<i class="icon-arrow"></i></a>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </main>
+                <div class="vodafone-logo">
+                    <div>
+                        <span>ممول من</span>
+                        <img src="img/vodafone-logo.png" alt="vodafone-logo" />
+                    </div>
+                </div>
         </div>
     </section>
 
@@ -93,6 +89,7 @@
     <script src="http://localhost:35729/livereload.js"></script>
     <script src="js/jQuery_3.4.1.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
     <script src="js/main.js"></script>
     <script>
         function setRequest() {

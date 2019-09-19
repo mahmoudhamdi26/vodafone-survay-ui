@@ -11,43 +11,20 @@
 <body>
     <header>
         <div class="row">
-            <div class="col-12">
-                <i id="openSideMenu" class="icon-bar"></i>
-                <div class="vodafone-logo">
-                    <div>
-                       <span>ممول من</span>
-                       <img src="img/vodafone-logo.png" alt="vodafone-logo"/>
-                    </div>
+            <div class="col-6">
+                <div class="talemy-logo">
+                    <img src="img/talemy-logo.png" alt="talemy logo">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="takadom-logo">
+                    <img src="img/takadom-logo.png" alt="takadom logo">
                 </div>
             </div>
         </div>
     </header>
     <section class="row">
-        <div class="col-3">
-            <aside>
-                <i id="closeSideMenu" class="icon-exit"></i>
-                <div class="takadom-logo">
-                    <img src="img/takadom-logo.png" alt="takadom-logo"/>
-                </div>
-                <div class="outer-spinner">
-                    <div class="chart" id="graph" data-line="5" data-percent="5"></div>
-                    <span class="percent">%</span>
-                    <span class="step">مرحلة 1 من 3</span>
-                </div>
-                <ul>
-                    <li class="active"><i class="icon-student"></i>التسجيل</li>
-                    <li><i class="icon-brain"></i>القسم الأول<span>التقدير الكيفى لسلوك الطالب</span></li>
-                    <li><i class="icon-report"></i>القسم الثانى<span>التقدير الكمي لسلوك الطالب</span></li>
-                </ul>
-                <div class="footer">
-                    <div class="company">
-                        <span>تم التصميم والتطوير بواسطة</span>
-                        <a href=""><img src="img/fritill-logo.png" alt="fritill logo"></a>
-                    </div>
-                </div>
-            </aside>
-        </div>
-        <div id="mainBody" class="col-12 col-md-9">
+        <div id="mainBody" class="col-12">
             <main class="registration">
                 <div class="row">
                     <div class="col-12">
@@ -62,15 +39,35 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>   
             </main>
         </div>
     </section>
-
-
+    <footer class="reg">
+        <div class="vodafone-logo">
+            <div>
+                <span>ممول من</span>
+                <img src="img/vodafone-logo.png" alt="vodafone-logo" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="rights">
+                    <p>جميع الحقوق محفوظة للجمعية المصرية لتقدم الأشخاص ذوي الإعاقة والتوحد</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="company">
+                    <span>تم التصميم والتطوير بواسطة</span>
+                    <a href=""><img src="img/fritill-logo.png" alt="fritill logo"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="http://localhost:35729/livereload.js"></script>
     <script src="js/jQuery_3.4.1.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
     <script src="js/main.js"></script>
     <script>
             function setRequest() {

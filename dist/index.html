@@ -13,16 +13,13 @@
     <header>
         <div class="row">
             <div class="col-6">
-                <div class="takadom-logo">
-                    <img src="img/takadom-logo.png" alt="takadom-logo"/>
+                <div class="talemy-logo">
+                    <img src="img/talemy-logo.png" alt="talemy-logo"/>
                 </div>
             </div>
             <div class="col-6">
-                <div class="vodafone-logo">
-                    <div>
-                       <span>ممول من</span>
-                       <img src="img/vodafone-logo.png" alt="vodafone-logo"/>
-                    </div>
+                <div class="takadom-logo">
+                    <img src="img/takadom-logo.png" alt="takadom-logo"/>
                 </div>
             </div>
         </div>
@@ -31,25 +28,34 @@
     <main class="landing">
         <div class="row">
             <div class="col-12 col-lg-6">
-                <div class="img-container">
-                    <img class="img-fluid" src="img/home.svg" alt="landing image">
+                <div class="main-video">
+                    <video controls autoplay>
+                        <source id="mainVideo" src="videos/promo.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
             <div class="col-12 col-lg-6">
                 <div class="info">
-                    <h1>قائمة الفرز المبدئي لصعوبات التعلم</h1>
+                    <h1 style="color: #404040">قائمة الفرز المبدئي لصعوبات التعلم</h1>
                     <h5>عزيزي المعلم/ المعلمة/ ولي الأمر</h5>
                     <p>
                             تهدف القائمة الحالية إلى التقييم المبدئي لصعوبات التعلم للأطفال في الصفوف الدراسية الثلاثة الأولى من المرحمة الابتدائية، وتمثل الدرجة التي يحصل عليها الطالب مسارا فارقا في اتجاه استبعاد أي صعوبات تعلم، أو التحويل من أجل تشخيص أكثر دقة لطبيعة صعوبات التعلم لدى الطالب؛ لذلك نرجو من سيادتكم قراءة كل بند من بنود القائمة بدقة وتأن، وتحديد الاستجابة المناسبة عمى البنود من خلال اتباع التعميمات</p>
                     <div class="button">
-                        <a href="registration.html">بدأ الإستبيان<i class="icon-arrow"></i></a>
+                        <a style="background: #ee4d4d;" href="registration.html">بدأ الإستبيان<i class="icon-arrow"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
     
-    <footer>
+    <footer class="reg">
+        <div class="vodafone-logo">
+            <div>
+                <span>ممول من</span>
+                <img src="img/vodafone-logo.png" alt="vodafone-logo" />
+            </div>
+        </div>
         <div class="row">
             <div class="col-6">
                 <div class="rights">
@@ -67,6 +73,7 @@
     <script src="http://localhost:35729/livereload.js"></script>
     <script src="js/jQuery_3.4.1.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

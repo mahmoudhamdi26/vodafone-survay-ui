@@ -1,10 +1,9 @@
 header{
-    padding-top: 45px;
-    position: relative;
+    padding: 4rem 5rem 0;
     #openSideMenu{
         position: absolute;
-        top: 70px;
-        right: 30px;
+        top: 3rem;
+        right: 3rem;
         cursor: pointer;
         z-index: 20;
     }
@@ -18,32 +17,65 @@ header{
         color: #7d7d7d;
         cursor: pointer;
     }
-    .takadom-logo{
-        padding-right: 75px;
+    .talemy-logo{
         text-align: right;
         img{
-            width: 203px;
-            height: 75px;
+            width: auto;
         }
     }
-    .vodafone-logo{
+    .takadom-logo{
+        text-align: left;
+        img{
+            width: auto;
+            height: 8rem;
+        }
+    }
+   
+   
+    @media (max-width: 767px){
+     padding: 3rem 2rem 0;
+    .talemy-logo{
+        text-align: right;
+        img{
+            width: 8rem;
+            height: 3rem;
+        }
+    }
+    .takadom-logo{
+        text-align: left;
+        img{
+           width: 6rem;
+            height: 6rem;
+        }
+    }
+    }
+    @media (min-width: 768px) and (max-width: 991px){
+ 
+    }
+    @media (min-width: 992px) and (max-width: 1999px){
+ 
+    }
+}
+ .vodafone-logo{
         text-align: left;
         position: relative;
         div{
-            position: absolute;
-            left: -15px;
-            width: 214px;
-            padding: 17px 0 17px 40px;
+            position: fixed;
+            left: -1.5rem;
+            bottom: 4rem;
+            width: 20rem;
+            padding: 1.7rem 0 1.7rem 4rem;
             border-top: 1px solid rgba(#e6e6e6, 1);
             border-bottom: 1px solid rgba(#e6e6e6, 1);
             border-right: 1px solid rgba(#e6e6e6, 1);
-            border-radius: 0 77px 77px 0;
+            border-radius: 0 7.7rem 7.7rem 0;
+            background: #fff;
             span{
                 display: block;
                 text-align: right;
-                margin-right: 50px;
-                margin-bottom: 5px;
-                font-size: 12.5px;
+                margin-right: 4rem;
+                margin-bottom: 0.5rem;
+                font-size: 1.2rem;
                 font-weight: 500;
                 font-style: normal;
                 font-stretch: normal;
@@ -52,101 +84,69 @@ header{
                 color: #404040;
             }
             img{
-                width: 124px;
-                height: 32px;
+                width: auto;
+                height: 3.2rem;
+            }
+            @media (max-width: 767px){
+                left: -1.5rem;
+                width: 18rem;
+                padding: 1.7rem 0 1.7rem 3rem;
+                span{
+                text-align: right;
+                margin-right: 3.5rem;
+                }
+                img{
+                width: 12rem;
+                height: 3rem;
             }
        }
     }
-    .section-name{
-        text-align: right;
-        padding-right: 390px;
-        padding-top: 23px;
-        font-style: normal;
-        font-stretch: normal;
-        letter-spacing: normal;
-        span{
-            font-size: 14px;
-            font-weight: 300;
-            line-height: 1.36;
-            color: #7d7d7d;
-        }
-        h4{
-            font-size: 17px;
-            font-weight: 800;
-            line-height: 1.12;
-            color: #404040;
-            margin-top: 5px;
-        }
-    }
-    @media (max-width: 767px){
-        .takadom-logo{
-            padding-right: 20px;
+}
+.reg{
+   .vodafone-logo{
+        text-align: left;
+        position: relative;
+        div{
+            position: absolute;
+            left: -10rem;
+            bottom: 3rem;
+            width: 20rem;
+            background: #fff;
+            padding: 1.7rem 0 1.7rem 4rem;
+            border-top: 1px solid rgba(#e6e6e6, 1);
+            border-bottom: 1px solid rgba(#e6e6e6, 1);
+            border-right: 1px solid rgba(#e6e6e6, 1);
+            border-radius: 0 7.7rem 7.7rem 0;
+            span{
+                display: block;
+                text-align: right;
+                margin-right: 4rem;
+                margin-bottom: 0.5rem;
+                font-size: 1.2rem;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.84;
+                letter-spacing: normal;
+                color: #404040;
+            }
             img{
-                width: 180px;
-                height: 65px;
+                width: auto;
+                height: 3.2rem;
             }
-        }
-        .vodafone-logo{
-            text-align: left;
-            div{
-                position: absolute;
-                width: 180px;
-                padding: 10px 0 10px 20px;
-                img{
-                    width: 124px;
-                    height: 32px;
-                }
+            @media (max-width: 767px){
+                 left: -10rem;
+                width: 18rem;
+                padding: 1.7rem 0 1.7rem 3rem;
                 span{
-                    margin-right: 40px;
+                text-align: right;
+                margin-right: 3.5rem;
                 }
-           }
-        }
-        .section-name{
-            padding-right: 70px;
-            span{
-                font-size: 12px;
-            }
-            h4{
-                font-size: 13px;
-            }
-        }
-    }
-    @media (min-width: 768px) and (max-width: 991px){
-        .takadom-logo{
-            padding-right: 30px;
-        }
-        .vodafone-logo{
-            div{
-                width: 150px;
-                padding: 10px 0 10px 20px;
                 img{
-                    width: 100px;
-                    height: 32px;
+                width: 12rem;
+                height: 3rem;
                 }
-                span{
-                    margin-right: 40px;
-                }
-           }
-        }
-        .section-name{
-            padding-right: 260px;
-            span{
-                font-size: 10px;
             }
-            h4{
-                font-size: 10px;
-            }
-        }
-    }
-    @media (min-width: 992px) and (max-width: 1999px){
-        .section-name{
-            padding-right: 360px;
-            span{
-                font-size: 12px;
-            }
-            h4{
-                font-size: 14px;
-            }
-        }
-    }
+       }
+    } 
 }

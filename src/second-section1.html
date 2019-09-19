@@ -1,49 +1,44 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="img/png" href="img/takadom-icon.png"/>
+    <link rel="icon" type="img/png" href="img/takadom-icon.png" />
     <title>Takadom</title>
-    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <header>
         <div class="row">
             <i id="openSideMenu" class="icon-bar"></i>
-            <div class="col-6">
-                <div class="section-name">
-                    <span> القسم الثانى</span>
-                    <h4>التقدير الكمى لسلوك الطالب</h4>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="vodafone-logo">
-                    <div>
-                       <span>ممول من</span>
-                       <img src="img/vodafone-logo.png" alt="vodafone-logo"/>
-                    </div>
+            <div class="col-12">
+                <div class="takadom-logo">
+                    <img src="img/takadom-logo.png" alt="takadom-logo">
                 </div>
             </div>
         </div>
     </header>
     <section class="row">
         <div class="col-3">
-            <aside>
+            <aside class="nice-scroll">
                 <i id="closeSideMenu" class="icon-exit"></i>
-                <div class="takadom-logo">
-                    <img src="img/takadom-logo.png" alt="takadom-logo"/>
+                <div class="talemy-logo">
+                    <img src="img/talemy-logo.png" alt="talemy logo" />
                 </div>
                 <div class="outer-spinner">
-                    <div class="chart" id="graph" data-line="5" data-percent="68"></div>
+                    <div class="chart" id="graph" data-color="#fcd22f" data-line="5" data-percent="36"></div>
                     <span class="percent">%</span>
-                    <span class="step">مرحلة 3 من 3</span>
+                    <span class="step">مرحلة 2 من 5</span>
                 </div>
                 <ul>
-                    <li><i class="icon-student"></i>التسجيل</li>
-                    <li><i class="icon-brain"></i>القسم الأول<span>التقدير الكيفى لسلوك الطالب</span></li>
-                    <li class="active"><i class="icon-report"></i>القسم الثانى<span>التقدير الكمي لسلوك الطالب</span></li>
+                    <li><i class="icon-boy"></i> أولاً:<span>الصعوبات السلوكية والانفعالية</span></li>
+                    <li class="active2"><i class="icon-brain"></i> ثانياً :<span>الصعوبات المعرفية</span></li>
+                    <li><i class="icon-book"></i>ثالثاً :<span>صعوبات تعلم القراءة</span></li>
+                    <li><i class="icon-write"></i>رابعاً :<span>صعوبات تعلم الكتابة</span></li>
+                    <li><i class="icon-minus"></i>خامساً :<span>صعوبات تعلم الحساب</span></li>
                 </ul>
                 <div class="footer">
                     <div class="company">
@@ -54,35 +49,41 @@
             </aside>
         </div>
         <div class="col-12 col-md-9">
-                <main class="second-section">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="info">
-                                <form action="">
-                                    <div id="question-form" data-value="20" data-view="5">
-                                        <h1>يجد صعوبة في ترتيب أدواتة أو أداء الأنشطة في تتابع ونظام</h1>
-                                        <div class="form-group">
-                                            <input type="radio" class="custom-control-input" id="never" name="answer">
-                                            <label class="custom-control-label" for="never">أبداً</label>
+            <main class="first-section second-section">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="info">
+                            <form action="">
+                                <div id="question-form" data-value="20" data-view="0">
+                                    <h1 style="color:#fcd22f">هل تم تطبيق اختبار ذكاء مقنن علي الطالب من قبل؟</h1>
+                                    <div class="form-group">
+                                        <input type="radio" class="custom-control-input" id="yes" name="exam">
+                                        <label class="custom-control-label" id="selectYes" for="yes">نعم</label>
 
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="radio" class="custom-control-input" id="someTime" name="answer">
-                                            <label class="custom-control-label" for="someTime">أحياناً</label>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="radio" class="custom-control-input" id="always" name="answer">
-                                            <label class="custom-control-label" for="always"> دائماً</label>
-                                        </div>
                                     </div>
-                                    <div class="button">
-                                        <a id="next" href="#"> التالى<i class="icon-arrow"></i></a>
+                                    <div class="form-group">
+                                        <input type="radio" class="custom-control-input" id="no" name="exam">
+                                        <label class="custom-control-label" for="no">لا</label>
                                     </div>
-                                </form>
-                            </div>
+                                    <div class="form-group">
+                                        <input type="radio" class="custom-control-input" id="notSure" name="exam">
+                                        <label class="custom-control-label" for="notSure">غير متأكد</label>
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <a style="background:#fcd22f" id="next" href="third-section.html"> التالى<i class="icon-arrow"></i></a>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                </main>
+                </div>
+            </main>
+            <div class="vodafone-logo">
+                <div>
+                    <span>ممول من</span>
+                    <img src="img/vodafone-logo.png" alt="vodafone-logo" />
+                </div>
+            </div>
         </div>
     </section>
 
@@ -90,38 +91,40 @@
     <script src="http://localhost:35729/livereload.js"></script>
     <script src="js/jQuery_3.4.1.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-            function setRequest() {
-                var xmlHttp;
-                if (window.XMLHttpRequest)
-                    xmlHttp = new XMLHttpRequest();
-                else {
-                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+        function setRequest() {
+            var xmlHttp;
+            if (window.XMLHttpRequest)
+                xmlHttp = new XMLHttpRequest();
+            else {
+                xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            return xmlHttp;
+        }
+        function ajax(page) {
+            var xmlHttp = setRequest();
+            xmlHttp.onreadystatechange = function () {
+                $("#question-form").innerHTML = ' <div class="spinner"><div class="spinner-circle"></div></div>';
+                if (this.readyState == 4 && this.status == 200) {
+                    $("#question-form").innerHTML = this.responseText;
                 }
-                return xmlHttp;
-            }
-            function ajax(page) {
-                var xmlHttp = setRequest();
-                xmlHttp.onreadystatechange = function () {
-                    $("#question-form").innerHTML = ' <div class="spinner"><div class="spinner-circle"></div></div>';
-                    if (this.readyState == 4 && this.status == 200) {
-                        $("#question-form").innerHTML = this.responseText;
-                    }
-                };
-                xmlHttp.open("GET",page,true);
-                xmlHttp.send();
-            }
-            $('#next').click(function () {
-                $('#question-form').load('second-section-question.html',function (rt,ts,xhr) {
-                    if (xhr.readyState < 4){
-                        $('#question-form').html('<div class="spinner"><div class="spinner-circle"></div></div>');
-                    }
-                    if ( ts == "error"){
-                        $('#question-form').html('Sorry There is Error' +xhr.status+' '+xhr.statusText );
-                    }
-                });
-            })
-        </script>
+            };
+            xmlHttp.open("GET", page, true);
+            xmlHttp.send();
+        }
+        $('#next').click(function () {
+            $('#question-form').load('second-section-question.html', function (rt, ts, xhr) {
+                if (xhr.readyState < 4) {
+                    $('#question-form').html('<div class="spinner"><div class="spinner-circle"></div></div>');
+                }
+                if (ts == "error") {
+                    $('#question-form').html('Sorry There is Error' + xhr.status + ' ' + xhr.statusText);
+                }
+            });
+        })
+    </script>
 </body>
+
 </html>

@@ -31,20 +31,40 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-write:before {
+  content: "\e90a";
+}
+.icon-book:before {
+  content: "\e900";
+}
+.icon-boy:before {
+  content: "\e902";
+}
+.icon-minus:before {
+  content: "\e906";
+}
+.icon-play .path1:before {
+  content: "\e907";
+  color: rgb(238, 77, 77);
+}
+.icon-play .path2:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-play .path3:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
 .icon-bar:before {
   content: "\e904";
 }
 .icon-exit:before {
   content: "\e905";
 }
-.icon-report:before {
-  content: "\e900";
-}
 .icon-brain:before {
   content: "\e901";
-}
-.icon-student:before {
-  content: "\e902";
 }
 .icon-arrow:before {
   content: "\e903";

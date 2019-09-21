@@ -11,8 +11,12 @@ html {
   font-size: 62.5%;
   font-size: 10px;
   @media (max-width: 575.98px) {
-    font-size: 9px;
+    font-size: 8px;
   }
+  @media (min-width: 2000px) {
+    font-size: 12px;
+  }
+  overflow-x: hidden;
 }
 
 body {
@@ -26,7 +30,7 @@ body {
   direction: rtl;
 }
 
-html[dir="rtl"] {
+html{
   font-family: 'GESSTextLight','GE_SS_Unique_Light', 'Cairo', sans-serif;
 }
 

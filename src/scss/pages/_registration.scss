@@ -11,7 +11,7 @@ aside {
   z-index: 25;
   transition: all 0.5s ease-in-out;
   overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   #closeSideMenu {
     position: absolute;
     top: 20px;
@@ -50,7 +50,7 @@ aside {
       line-height: 180px;
       text-align: center;
       margin-right: -20px;
-      font-size: 50px;
+      font-size: 5rem;
       font-weight: 500;
       letter-spacing: -2.45px;
       color: #404040;
@@ -58,8 +58,8 @@ aside {
     .percent {
       position: absolute;
       top: 80px;
-      right: 185px;
-      font-size: 28px;
+      right: 18.5rem;
+      font-size: 2.8rem;
       font-weight: 500;
       color: #404040;
     }
@@ -182,7 +182,7 @@ aside {
         margin-right: -20px;
       }
       .percent {
-        right: 125px;
+        right: 135px;
       }
       .step {
         right: 95px;

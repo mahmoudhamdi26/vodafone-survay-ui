@@ -1,14 +1,14 @@
 jQuery(document).ready(function() {
   var el = document.getElementById("graph"), // get canvas
     questionContainer = document.getElementById("question-form"); // get canvas
-
-  var options = {
-    percent: el.getAttribute("data-percent") || 25,
-    size: el.getAttribute("data-size") || 300,
-    lineWidth: el.getAttribute("data-line") || 5,
-    rotate: el.getAttribute("data-rotate") || 0,
-    color: el.getAttribute("data-color") || '#0e8efd'
-  };
+    if(el){
+      var options = {
+        percent: el.getAttribute("data-percent") || 25,
+        size: el.getAttribute("data-size") || 300,
+        lineWidth: el.getAttribute("data-line") || 5,
+        rotate: el.getAttribute("data-rotate") || 0,
+        color: el.getAttribute("data-color") || '#0e8efd'
+      };
     if (questionContainer) {
         var nextValue = questionContainer.getAttribute("data-value"),
         currentValue = parseInt(questionContainer.getAttribute("data-view")),
@@ -63,6 +63,7 @@ jQuery(document).ready(function() {
 
   drawCircle("#eee", options.lineWidth, 100 / 100);
   drawCircle(options.color, options.lineWidth, parseInt(options.percent) / 100);
+  }
   //////////////////////////////////
   $("#selectYes").click(() => {
     $("#selectExam").fadeIn();
@@ -90,12 +91,20 @@ jQuery(document).ready(function() {
     cursoropacitymax: 0.5,
     cursorwidth: "5px"
   });
-  var width = $(window).width();
-
-  //////////////////// store screen width /////////
-  if (width < 768) {
-    $("aside").removeClass("nice-scroll");
-    console.log("jjj");
-    
+  ////////////////////////////////
+  var video = document.getElementById('mainVideo');
+  var play = $('#play');
+  if(video){
+    play.click(function () {
+      video.play();
+      $('#overlay').fadeOut();
+    })
+    video.addEventListener('pause', function () {
+      $('#overlay').fadeIn();
+    })
+    video.addEventListener('play', function () {
+      $('#overlay').fadeOut();
+    })
   }
+  ///////////////////////////////////
 });

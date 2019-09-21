@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="img/png" href="img/takadom-icon.png" />
+    <title>Takadom</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="col-6">
+                <div class="talemy-logo">
+                    <img src="img/talemy-logo.png" alt="talemy logo">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="takadom-logo">
+                    <img src="img/takadom-logo.png" alt="takadom logo">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="row">
+            <div class="col-12">
+                <div class="result-header">
+                    <h1>تقرير نتائج إستمارة تقييم صعوبات التعلم لدى الأطفال</h1>
+                    <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو
+                        شكل
+                        توضع الفقرات في الصفحة التي يقرأها.</p>
+                </div>
+            </div>
+            <!--CHART HTML -->
+            <div id="chartdiv" data-first="80" data-second="70"
+             data-third="90" data-fourth="50" data-fifth="60"></div>
+             <div class="col-12">
+                 <div class="result-table">
+                     <h3>السيد الفاضل ولى أمر الطالب/ة</h3>
+                     <span>تحية طيبة وبعد</span>
+                    <p>نفيد سيادتكم بأن نتائج إستمارة تقييم صعوبات التعلم لدى الأطفال التى تكرمتم بإستكمالها تشير إلى ما يلى</p>
+                    <div class="table">
+                        <div class="table-head">
+                             <div class="table-col1">المجال</div>
+                             <div class="table-col2">مستوى الأداء</div>
+                        </div>
+                        <div class="table-body">
+                            <div class="table-row">
+                                <div class="table-col1"><i class="icon-boy"></i> الصعوبات السلوكية والانفعالية</div>
+                                <div class="sub-row">
+                                    <div class="table-col2">لا توجد صعوبة</div>
+                                    <div class="table-col2"></div>
+                                    <div class="table-col2"></div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1"><i class="icon-brain"></i> الصعوبات المعرفية</div>
+                                <div class="sub-row">
+                                    <div class="table-col2"></div>
+                                    <div class="table-col2">يوجد صعوبة محتملة</div>
+                                    <div class="table-col2"></div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1"><i class="icon-book"></i>صعوبات تعلم القراءة</div>
+                                <div class="sub-row">
+                                    <div class="table-col2">لا توجد صعوبة</div>
+                                    <div class="table-col2"></div>
+                                    <div class="table-col2"></div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1"><i class="icon-write"></i>صعوبات تعلم الكتابة</div>
+                                <div class="sub-row">
+                                    <div class="table-col2"></div>
+                                    <div class="table-col2">توجد صعوبة محتملة</div>
+                                    <div class="table-col2"></div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1"><i class="icon-minus"></i>صعوبات تعلم الحساب</div>
+                                <div class="sub-row">
+                                    <div class="table-col2"></div>
+                                    <div class="table-col2"></div>
+                                    <div class="table-col2">توجد صعوبة محتملة</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-right">وفي ضوء النتائج الموضحة بالجدول السابق، نوصي بإتباع الاجراءات التالية عند التعامل مع الابن/ة</p>
+                 </div>
+                <div class="advice-tables">
+                    <h2>توصيات تقرير إستمارة تقييم صعوبات التعلم لدى الأطفال</h2>
+                    <h4>أولاً: الصعوبات السلوكية والانفعالية</h4>
+                    <div class="table">
+                        <div class="table-head">
+                            <div class="table-col1">البند/ السلوك</div>
+                            <div class="table-col2"> توصيات في حالة الاستجابة دائماً</div>
+                        </div>
+                        <div class="table-body">
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>ثانياً: الصعوبات المعرفية</h4>
+                    <div class="table">
+                        <div class="table-head">
+                            <div class="table-col1">البند/ السلوك</div>
+                            <div class="table-col2"> توصيات في حالة الاستجابة دائماً</div>
+                        </div>
+                        <div class="table-body">
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>ثالثاً: صعوبات تعلم القراءة</h4>
+                    <div class="table">
+                        <div class="table-head">
+                            <div class="table-col1">البند/ السلوك</div>
+                            <div class="table-col2"> توصيات في حالة الاستجابة دائماً</div>
+                        </div>
+                        <div class="table-body">
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>رابعاً: صعوبات تعلم الكتابة</h4>
+                    <div class="table">
+                        <div class="table-head">
+                            <div class="table-col1">البند/ السلوك</div>
+                            <div class="table-col2"> توصيات في حالة الاستجابة دائماً</div>
+                        </div>
+                        <div class="table-body">
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>خامساً: صعوبات تعلم الحساب</h4>
+                    <div class="table">
+                        <div class="table-head second">
+                            <div class="table-col1">البند/ السلوك</div>
+                            <div class="table-col2"> توصيات في حالة الاستجابة دائماً</div>
+                        </div>
+                        <div class="table-body">
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col1">يمكن وصف سلوكه بأنه مهمل</div>
+                                <div class="sub-row">
+                                    اسناد للطفل مهام لتدريبه على إحضار أدواته وواجباته وإعادتها للحقيبة بنفسه
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </main>
+    <footer class="reg">
+        <div class="vodafone-logo">
+            <div>
+                <span>ممول من</span>
+                <img src="img/vodafone-logo.png" alt="vodafone-logo" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="rights">
+                    <p>جميع الحقوق محفوظة للجمعية المصرية لتقدم الأشخاص ذوي الإعاقة والتوحد</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="company">
+                    <span>تم التصميم والتطوير بواسطة</span>
+                    <a href=""><img src="img/fritill-logo.png" alt="fritill logo"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--CHART Resources -->
+<script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="js/materials.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+<script src="http://localhost:35729/livereload.js"></script>
+<script src="js/jQuery_3.4.1.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+<script src="js/main.js"></script>
+<!-- Chart code -->
+<script>
+    am4core.ready(function () {
+        // Themes begin
+        am4core.useTheme(am4themes_material);
+        am4core.useTheme(am4themes_animated);
+        // Themes end
+        // Create chart instance
+        var chart = am4core.create("chartdiv", am4charts.RadarChart);
+        // Add data
+        var chartDiv = $('#chartdiv'),
+            first = chartDiv.data('first'),
+            second = chartDiv.data('second'),
+            third = chartDiv.data('third'),
+            fourth = chartDiv.data('fourth'),
+            fifth = chartDiv.data('fifth');
+            
+        chart.data = [{
+            "category": "الصعوبات السلوكية والإنفعالية",
+            "value": first,
+            "full": 100
+        }, {
+            "category": "الصعوبات المعرفية",
+            "value": second,
+            "full": 100
+        }, {
+            "category": "صعوبات تعلم القراة",
+            "value": third,
+            "full": 100
+        }, {
+            "category": "صعوبات تعلم الكتابة ",
+            "value": fourth,
+            "full": 100
+        },
+         {
+            "category": " صعوبات تعلم الحساب",
+            "value": fifth,
+            "full": 100
+            }];
+
+        // Make chart not full circle
+        chart.startAngle = -90;
+        chart.endAngle = 180;
+        chart.innerRadius = am4core.percent(20);
+
+        // Set number format
+        chart.numberFormatter.numberFormat = "'%'#.#";
+
+        // Create axes
+        var categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
+        categoryAxis.dataFields.category = "category";
+        categoryAxis.renderer.grid.template.location = 0;
+        categoryAxis.renderer.grid.template.strokeOpacity = 0;
+        categoryAxis.renderer.labels.template.horizontalCenter = "right";
+        categoryAxis.renderer.labels.template.fontWeight = 500;
+        categoryAxis.renderer.labels.template.adapter.add("fill", function (fill, target) {
+            return (target.dataItem.index >= 0) ? chart.colors.getIndex(target.dataItem.index) : fill;
+        });
+        categoryAxis.renderer.minGridDistance = 10;
+
+        var valueAxis = chart.xAxes.push(new am4charts.ValueAxis());
+        valueAxis.renderer.grid.template.strokeOpacity = 0;
+        valueAxis.min = 0;
+        valueAxis.max = 100;
+        valueAxis.strictMinMax = true;
+
+        // Create series
+        var series1 = chart.series.push(new am4charts.RadarColumnSeries());
+        series1.dataFields.valueX = "full";
+        series1.dataFields.categoryY = "category";
+        series1.clustered = false;
+        series1.columns.template.fill = new am4core.InterfaceColorSet().getFor("alternativeBackground");
+        series1.columns.template.fillOpacity = 0.08;
+        series1.columns.template.cornerRadiusTopLeft = 20;
+        series1.columns.template.strokeWidth = 0;
+        series1.columns.template.radarColumn.cornerRadius = 20;
+
+        var series2 = chart.series.push(new am4charts.RadarColumnSeries());
+        series2.dataFields.valueX = "value";
+        series2.dataFields.categoryY = "category";
+        series2.clustered = false;
+        series2.columns.template.strokeWidth = 0;
+        series2.columns.template.tooltipText = "{category}: [bold]{value}[/]";
+        series2.columns.template.radarColumn.cornerRadius = 20;
+
+        series2.columns.template.adapter.add("fill", function (fill, target) {
+            return chart.colors.getIndex(target.dataItem.index);
+        });
+
+        // Add cursor
+        chart.cursor = new am4charts.RadarCursor();
+
+    }); // end am4core.ready()
+</script>
+</body>
+</html>

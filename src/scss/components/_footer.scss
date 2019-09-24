@@ -37,6 +37,78 @@ footer{
         }
     }
     @media (max-width: 557px){
+        position: relative;
+        padding: 1rem 2rem;
+        .row{
+         flex-flow: column wrap;
+         align-items: center;
+          .col-6{
+              max-width: 100%;
+          }
+          .rights{
+              text-align: center;
+              p{
+                  width: 85%;
+                  margin-right: 12.5%;
+              }
+          }
+          .company{
+            text-align: center;
+             width: 50%;
+             margin-right:20%;
+          }
+        }
+    }
+    @media (min-width: 558px) and (max-width: 767px){
+        position: relative;
+        padding: 1.5rem 2.2rem 1.5rem 7rem;
+    }
+    @media (min-width: 768px) and (max-width: 991px){
+        padding: 15px 30px 15px 80px;
+        position: relative;
+        .rights{
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+}
+.relative-footer{
+    border: solid 1px #e6e6e6;
+    background-color: rgba(#d7d7d7, 0.8);
+    padding: 1.5rem 7.5rem 1.5rem 10rem;
+    margin: 5rem 0 0 0;
+    position: relative;
+    .rights{
+        text-align: right;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        p{
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-align: right;
+            color: #818181;
+        }
+    }
+    .company{
+        text-align: left;
+        position: relative;
+        span{
+            font-size: 8px;
+            font-weight: 800;
+            line-height: 1.38;
+            color: #707070;
+        }
+        img{
+            width: 4.9rem;
+            height: 1.7rem;
+            position: absolute;
+            top: 1px;
+            margin-right: 5px;
+        }
+    }
+    @media (max-width: 557px){
         padding: 1rem 2rem;
         .row{
          flex-flow: column wrap;

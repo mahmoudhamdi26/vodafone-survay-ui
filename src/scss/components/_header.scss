@@ -1,152 +1,177 @@
-header{
-    padding: 4rem 5rem 0;
-    #openSideMenu{
-        position: absolute;
-        top: 3rem;
-        right: 3rem;
-        cursor: pointer;
-        z-index: 20;
+header {
+  padding: 4rem 5rem 0;
+  #openSideMenu {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    cursor: pointer;
+    z-index: 20;
+  }
+  @media (min-width: 768px) {
+    #openSideMenu {
+      display: none;
     }
-    @media (min-width: 768px) {
-        #openSideMenu{
-            display: none;
-        }
+  }
+  .icon-bar:before {
+    font-size: 26px;
+    color: #7d7d7d;
+    cursor: pointer;
+  }
+  .talemy-logo {
+    text-align: right;
+    img {
+      width: auto;
     }
-    .icon-bar:before {
-        font-size: 26px;
-        color: #7d7d7d;
-        cursor: pointer;
+  }
+  .takadom-logo {
+    text-align: left;
+    img {
+      width: auto;
+      height: 8rem;
     }
-    .talemy-logo{
-        text-align: right;
-        img{
-            width: auto;
-        }
+  }
+
+  @media (max-width: 767px) {
+    padding: 3rem 2rem 0;
+    .talemy-logo {
+      text-align: right;
+      padding-right: 6rem;
+      img {
+        width: 10rem;
+        height: 4rem;
+      }
     }
-    .takadom-logo{
-        text-align: left;
-        img{
-            width: auto;
-            height: 8rem;
-        }
+    .takadom-logo {
+      text-align: left;
+      margin-top: -0.5rem;
+      img {
+        width: 6rem;
+        height: 6rem;
+      }
     }
-   
-   
-    @media (max-width: 767px){
-     padding: 3rem 2rem 0;
-    .talemy-logo{
-        text-align: right;
-        img{
-            width: 8rem;
-            height: 3rem;
-        }
-    }
-    .takadom-logo{
-        text-align: left;
-        img{
-           width: 6rem;
-            height: 6rem;
-        }
-    }
-    }
-    @media (min-width: 768px) and (max-width: 991px){
- 
-    }
-    @media (min-width: 992px) and (max-width: 1999px){
- 
-    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+  }
+  @media (min-width: 992px) and (max-width: 1999px) {
+  }
 }
- .vodafone-logo{
-        text-align: left;
-        position: relative;
-        div{
-            position: fixed;
-            left: -1.5rem;
-            bottom: 4rem;
-            width: 20rem;
-            padding: 1.7rem 0 1.7rem 4rem;
-            border-top: 1px solid rgba(#e6e6e6, 1);
-            border-bottom: 1px solid rgba(#e6e6e6, 1);
-            border-right: 1px solid rgba(#e6e6e6, 1);
-            border-radius: 0 7.7rem 7.7rem 0;
-            background: #fff;
-            span{
-                display: block;
-                text-align: right;
-                margin-right: 4rem;
-                margin-bottom: 0.5rem;
-                font-size: 1.2rem;
-                font-weight: 500;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: 1.84;
-                letter-spacing: normal;
-                color: #404040;
-            }
-            img{
-                width: auto;
-                height: 3.2rem;
-            }
-            @media (max-width: 767px){
-                left: -1.4rem;
-                width: 18rem;
-                padding: 0.2rem 0 1.7rem 1rem 3rem;
-                span{
-                text-align: right;
-                margin-right: 2.4rem;
-                }
-                img{
-                width: 12rem;
-                height: 3rem;
-                }
-            }
-       }
+.header{
+  @media (max-width: 767px) {
+    padding: 3rem 2rem 0;
+    .talemy-logo {
+      text-align: right;
+      padding-right: 0;
+      img {
+        width: 10rem;
+        height: 4rem;
+      }
     }
-.reg{
-   .vodafone-logo{
-        text-align: left;
-        position: relative;
-        div{
-            position: absolute;
-            left: -10rem;
-            bottom: 3rem;
-            width: 20rem;
-            background: #fff;
-            padding: 1.7rem 0 1.7rem 4rem;
-            border-top: 1px solid rgba(#e6e6e6, 1);
-            border-bottom: 1px solid rgba(#e6e6e6, 1);
-            border-right: 1px solid rgba(#e6e6e6, 1);
-            border-radius: 0 7.7rem 7.7rem 0;
-            span{
-                display: block;
-                text-align: right;
-                margin-right: 4rem;
-                margin-bottom: 0.5rem;
-                font-size: 1.2rem;
-                font-weight: 500;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: 1.84;
-                letter-spacing: normal;
-                color: #404040;
-            }
-            img{
-                width: auto;
-                height: 3.2rem;
-            }
-            @media (max-width: 767px){
-                left: -4rem;
-                width: 18rem;
-                padding: 0.2rem 0 1.7rem 1rem 3rem;
-                span{
-                text-align: right;
-                margin-right: 2.4rem;
-                }
-                img{
-                width: 12rem;
-                height: 3rem;
-                }
-            }
-       }
-    } 
+  }
+}
+.vodafone-logo {
+  text-align: left;
+  position: relative;
+  div {
+    position: fixed;
+    left: -1.5rem;
+    bottom: 4rem;
+    width: 20rem;
+    padding: 1.7rem 0 1.7rem 4rem;
+    border-top: 1px solid rgba(#e6e6e6, 1);
+    border-bottom: 1px solid rgba(#e6e6e6, 1);
+    border-right: 1px solid rgba(#e6e6e6, 1);
+    border-radius: 0 7.7rem 7.7rem 0;
+    background: #fff;
+    span {
+      display: block;
+      text-align: right;
+      margin-right: 4rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.84;
+      letter-spacing: normal;
+      color: #404040;
+    }
+    img {
+      width: auto;
+      height: 3.2rem;
+    }
+    @media (max-width: 767px) {
+      left: -1.4rem;
+      width: 18rem;
+      padding: 0.2rem 0 1.7rem 1rem 3rem;
+      span {
+        text-align: right;
+        margin-right: 2.4rem;
+      }
+      img {
+        width: 12rem;
+        height: 3rem;
+      }
+    }
+  }
+}
+.reg {
+  .vodafone-logo {
+    text-align: left;
+    position: relative;
+    div {
+      position: absolute;
+      left: -10rem;
+      bottom: 3rem;
+      width: 20rem;
+      background: #fff;
+      padding: 1.7rem 0 1.7rem 4rem;
+      border-top: 1px solid rgba(#e6e6e6, 1);
+      border-bottom: 1px solid rgba(#e6e6e6, 1);
+      border-right: 1px solid rgba(#e6e6e6, 1);
+      border-radius: 0 7.7rem 7.7rem 0;
+      span {
+        display: block;
+        text-align: right;
+        margin-right: 4rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.84;
+        letter-spacing: normal;
+        color: #404040;
+      }
+      img {
+        width: auto;
+        height: 3.2rem;
+      }
+      @media (max-width: 557px) {
+        left: -4rem;
+        width: 18rem;
+        padding: 0.2rem 0 1.7rem 1rem 2rem;
+        span {
+          text-align: right;
+          margin-right: 2.4rem;
+        }
+        img {
+          width: 12rem;
+          height: 3rem;
+        }
+      }
+      @media (min-width: 558px) and (max-width: 767px) {
+        left: -8rem;
+        width: 18rem;
+        padding: 0.2rem 0 1.7rem 1rem 2rem;
+        span {
+          text-align: right;
+          margin-right: 2.4rem;
+        }
+        img {
+          width: 12rem;
+          height: 3rem;
+        }
+      }
+    }
+  }
 }

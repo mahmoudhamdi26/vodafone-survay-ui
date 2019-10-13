@@ -19,6 +19,26 @@ aside {
     z-index: 20;
     cursor: pointer;
   }
+  .button{
+    margin-bottom: 2rem;
+    a{
+        display: inline-flex;
+        align-items: center;
+        text-align: center;
+        width: 40%;
+        height: 45px;
+        border-radius: 3px;
+        box-shadow: 0 7px 10px 0 rgba(238, 77, 77, 0.25);
+        background-color: #ee4d4d;
+        padding: 13px 3rem;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 800;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0;
+        }
+    }
   @media (min-width: 768px) {
     #closeSideMenu {
       display: none;
@@ -76,7 +96,7 @@ aside {
     text-align: right;
     li {
       padding-right: 4.3rem;
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
       font-size: 1.6rem;
       font-weight: 500;
       line-height: 1.78;
@@ -145,7 +165,33 @@ aside {
   }
   .footer {
     text-align: center;
-    padding-bottom: 1.8rem;
+    padding-bottom: 2rem;
+    .vodafone-logo {
+      margin-bottom: 1.5rem;
+      span {
+        display: block;
+        text-align: right;
+        margin-right: 11.2rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.84;
+        letter-spacing: normal;
+        color: #707070;
+        @media (max-width: 991px) {
+          margin-right: 6.5rem;
+        }
+      }
+      img {
+        width: auto;
+        height: 3.2rem;
+      }
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
     .company {
       position: relative;
       margin-right: -50px;
@@ -162,11 +208,19 @@ aside {
         top: 1px;
         margin-right: 5px;
       }
+      @media (max-width: 767px) {
+        display: none;
+      }
     }
   }
   @media (max-width: 767px) {
     width: 250px;
     right: -350px;
+    .button{
+      a{
+        width: 60%;
+      }
+    }
     .takadom-logo {
       img {
         width: 180px;
@@ -208,6 +262,11 @@ aside {
   }
   @media (min-width: 768px) and (max-width: 991px) {
     width: 250px;
+    .button{
+      a{
+        width: 60%;
+      }
+    }
     .takadom-logo {
       img {
         width: 180px;
@@ -295,7 +354,25 @@ aside {
         }
       }
     }
-    @media (max-width: 767px) {
+    @media (max-width: 557px) {
+      margin-top: 8rem;
+      margin-bottom: 15rem;
+      p {
+        width: 80%;
+        margin-right: 10%;
+      }
+    }
+    @media (min-width: 558px) and (max-width: 767px) {
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+      p {
+        width: 80%;
+        margin-right: 10%;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      margin-top: 6rem;
+      margin-bottom: 5rem;
       p {
         width: 80%;
         margin-right: 10%;
@@ -305,15 +382,34 @@ aside {
 }
 .form {
   text-align: right;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   h1 {
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 800;
     line-height: 1;
     color: #3f3f3f;
     stroke: 2px #3f3f3f;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
     text-align: center;
+  }
+  p {
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #3f3f3f;
+    stroke: 2px #3f3f3f;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 60%;
+    margin-right: 20%;
+    @media (max-width: 991px) {
+      width: 90%;
+      margin-right: 5%;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      width: 80%;
+      margin-right: 10%;
+    }
   }
   form {
     width: 50%;
@@ -325,6 +421,12 @@ aside {
       color: #7d7d7d;
       margin-bottom: 10px;
       display: block;
+    }
+    input[type="email"] {
+      direction: ltr;
+    }
+    input[type="email"]::placeholder {
+      direction: rtl;
     }
     .form-control {
       width: 100%;
@@ -363,6 +465,22 @@ aside {
         }
       }
     }
+  }
+  @media (max-width: 767px){
+    margin-top: 5rem;
+  }
+}
+.reg{
+ padding-bottom: 100px;
+ @media (max-width: 767px){
+   margin-top: 50px;
+   padding-bottom: 100px;
+  }
+}
+.log{
+  @media (max-width: 767px){
+    margin-top: 50px;
+    padding-bottom:250px;
   }
 }
 .ui-datepicker .ui-datepicker-prev span,

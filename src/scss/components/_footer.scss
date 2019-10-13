@@ -1,144 +1,548 @@
-footer{
-    border: solid 1px #e6e6e6;
-    background-color: rgba(#d7d7d7, 0.8);
-    padding: 1.5rem 7.5rem 1.5rem 10rem;
-    margin: 5rem 0 0 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 999;
-    .rights{
-        text-align: right;
-        font-style: normal;
-        font-stretch: normal;
-        letter-spacing: normal;
-        p{
-            font-size: 1.2rem;
-            font-weight: 500;
-            text-align: right;
-            color: #818181;
-        }
+.fixed-footer {
+  border: solid 1px #e6e6e6;
+  background-color: rgba(#d7d7d7, 0.8);
+  padding: 1.5rem 7.5rem 1.5rem 10rem;
+  margin: 5rem 0 0 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  .vodafone-logo {
+    text-align: left;
+    margin-left: -5rem;
+    // span {
+    //   display: block;
+    //   margin-left: 7rem;
+    //   margin-bottom: 0.5rem;
+    //   font-size: 1.2rem;
+    //   font-weight: 500;
+    //   font-style: normal;
+    //   font-stretch: normal;
+    //   line-height: 1.84;
+    //   letter-spacing: normal;
+    //   color: #404040;
+    // }
+    img {
+      width: auto;
+      height: 3.2rem;
     }
-    .company{
-        text-align: left;
-        position: relative;
-        span{
-            font-size: 8px;
-            font-weight: 800;
-            line-height: 1.38;
-            color: #707070;
-        }
-        img{
-            width: 4.9rem;
-            height: 1.7rem;
-            position: absolute;
-            top: 1px;
-            margin-right: 5px;
-        }
+  }
+  .rights {
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+     margin-top: 0.9rem;
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #818181;
     }
-    @media (max-width: 557px){
-        position: relative;
-        padding: 1rem 2rem;
-        .row{
-         flex-flow: column wrap;
-         align-items: center;
-          .col-6{
-              max-width: 100%;
-          }
-          .rights{
-              text-align: center;
-              p{
-                  width: 85%;
-                  margin-right: 12.5%;
-              }
-          }
-          .company{
-            text-align: center;
-             width: 50%;
-             margin-right:20%;
-          }
-        }
-    }
-    @media (min-width: 558px) and (max-width: 767px){
-        position: relative;
-        padding: 1.5rem 2.2rem 1.5rem 7rem;
-    }
-    @media (min-width: 768px) and (max-width: 991px){
-        padding: 15px 30px 15px 80px;
-        position: relative;
-        .rights{
-            p{
-                font-size: 10px;
-            }
-        }
-    }
-}
-.relative-footer{
-    border: solid 1px #e6e6e6;
-    background-color: rgba(#d7d7d7, 0.8);
-    padding: 1.5rem 7.5rem 1.5rem 10rem;
-    margin: 5rem 0 0 0;
+  }
+  .company {
     position: relative;
-    .rights{
-        text-align: right;
-        font-style: normal;
-        font-stretch: normal;
-        letter-spacing: normal;
-        p{
-            font-size: 1.2rem;
-            font-weight: 500;
-            text-align: right;
-            color: #818181;
-        }
+    margin-right: -3rem;
+    margin-top: 0.8rem;
+    span {
+      font-size: 8px;
+      font-weight: 800;
+      line-height: 1.38;
+      color: #707070;
     }
-    .company{
-        text-align: left;
-        position: relative;
+    img {
+      width: 4.9rem;
+      height: 1.7rem;
+      position: absolute;
+      top: 1px;
+      margin-right: 5px;
+    }
+  }
+   @media (max-width: 399px) {
+    position: relative;
+    padding: 0.5rem 2rem;
+      .rights {
+        text-align: center;
+        p {
+          width: 100%;
+          font-size: 0.9rem;
+        }
+      }
+      .company {
+        margin-right: 0;
+        margin-top: 3rem;
         span{
-            font-size: 8px;
-            font-weight: 800;
-            line-height: 1.38;
-            color: #707070;
+            font-size: 0.6rem;
         }
-        img{
-            width: 4.9rem;
-            height: 1.7rem;
-            position: absolute;
-            top: 1px;
-            margin-right: 5px;
-        }
-    }
-    @media (max-width: 557px){
-        padding: 1rem 2rem;
-        .row{
-         flex-flow: column wrap;
-         align-items: center;
-          .col-6{
-              max-width: 100%;
+      }
+      .vodafone-logo{
+          margin-left: 0;
+          margin-top: 2.5rem;
+          img {
+            width: auto;
+            height: 2.7rem;
           }
-          .rights{
-              text-align: center;
-              p{
-                  width: 85%;
-                  margin-right: 12.5%;
-              }
-          }
-          .company{
-            text-align: center;
-             width: 50%;
-             margin-right:20%;
-          }
+      }
+  }
+  @media (min-width: 400px) and (max-width: 480px) {
+    position: relative;
+    padding: 1rem 2rem;
+      .rights {
+        text-align: center;
+        p {
+          width: 100%;
         }
-    }
-    @media (min-width: 558px) and (max-width: 767px){
-        padding: 1.5rem 2.2rem 1.5rem 7rem;
-    }
-    @media (min-width: 768px) and (max-width: 991px){
-        padding: 15px 30px 15px 80px;
-        .rights{
-            p{
-                font-size: 10px;
-            }
+      }
+      .company {
+        margin-right: 0;
+        margin-top: 2.5rem;
+        span{
+            font-size: 0.8rem;
         }
+      }
+      .vodafone-logo{
+          margin-left: 0;
+          margin-top: 2rem;
+      }
+  }
+  @media (min-width: 481px) and (max-width: 557px) {
+    position: relative;
+    padding: 1rem 2rem;
+      .rights {
+        text-align: center;
+        p {
+          width: 100%;
+        }
+      }
+      .company {
+        margin-right: 0;
+        margin-top: 2rem;
+      }
+      .vodafone-logo{
+          margin-left: 0;
+          margin-top: 1.5rem;
+      }
+  }
+  @media (min-width: 558px) and (max-width: 767px) {
+    position: relative;
+    padding: 1.5rem 2.2rem 1.5rem 7rem;
+    .rights {
+        text-align: center;
+        p {
+          width: 100%;
+          font-size: 1rem;
+        }
+      }
+    .company {
+        margin-right: 0;
+        margin-top: 2rem;
+        span{
+            font-size: 0.7rem;
+        }
+      }
+      .vodafone-logo{
+          margin-left: -2rem;
+          margin-top: 1.5rem;
+      }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding: 15px 30px 15px 80px;
+    position: relative;
+    .rights {
+        text-align: center;
+        p {
+          width: 100%;
+        }
+      }
+    .company {
+        margin-right: 0;
+        margin-top: 1.5rem;
+      }
+      .vodafone-logo{
+          margin-left: -1rem;
+          margin-top: 1rem;
+      }
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    padding: 15px 30px 15px 80px;
+    position: relative;
+    .rights {
+        text-align: center;
+        p {
+          width: 100%;
+        }
+      }
+    .company {
+        margin-right: 0;
+        margin-top: 1rem;
+      }
+      .vodafone-logo{
+          margin-left: -1rem;
+          margin-top: 0.5rem;
+      }
+  }
+}
+.responsive-footer {
+  border: solid 1px #e6e6e6;
+  background-color: rgba(#d7d7d7, 0.8);
+  padding: 1.5rem 7.5rem 1.5rem 10rem;
+  margin: 5rem 0 0 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  .vodafone-logo {
+    text-align: left;
+    margin-left: -5rem;
+    // span {
+    //   display: block;
+    //   margin-left: 7rem;
+    //   margin-bottom: 0.5rem;
+    //   font-size: 1.2rem;
+    //   font-weight: 500;
+    //   font-style: normal;
+    //   font-stretch: normal;
+    //   line-height: 1.84;
+    //   letter-spacing: normal;
+    //   color: #404040;
+    // }
+    img {
+      width: auto;
+      height: 3.2rem;
+    }
+  }
+  .rights {
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+     margin-top: 0.9rem;
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #818181;
+    }
+  }
+  .company {
+    position: relative;
+    margin-right: -3rem;
+    margin-top: 0.8rem;
+    span {
+      font-size: 8px;
+      font-weight: 800;
+      line-height: 1.38;
+      color: #707070;
+    }
+    img {
+      width: 4.9rem;
+      height: 1.7rem;
+      position: absolute;
+      top: 1px;
+      margin-right: 5px;
+    }
+  }
+   @media (max-width: 399px) {
+    position: relative;
+    padding: 0.5rem 2rem;
+      .rights {
+        text-align: center;
+        p {
+          width: 100%;
+          font-size: 0.9rem;
+        }
+      }
+      .company {
+        margin-right: 0;
+        margin-top: 3rem;
+        span{
+            font-size: 0.6rem;
+        }
+      }
+      .vodafone-logo{
+          margin-left: 0;
+          margin-top: 2.5rem;
+          img {
+            width: auto;
+            height: 2.7rem;
+          }
+      }
+  }
+  @media (min-width: 400px) and (max-width: 480px) {
+    position: relative;
+    padding: 1rem 2rem;
+      .rights {
+        text-align: center;
+        p {
+          width: 100%;
+        }
+      }
+      .company {
+        margin-right: 0;
+        margin-top: 2.5rem;
+        span{
+            font-size: 0.8rem;
+        }
+      }
+      .vodafone-logo{
+          margin-left: 0;
+          margin-top: 2rem;
+      }
+  }
+  @media (min-width: 481px) and (max-width: 557px) {
+    position: relative;
+    padding: 1rem 2rem;
+      .rights {
+        text-align: center;
+        p {
+          width: 100%;
+        }
+      }
+      .company {
+        margin-right: 0;
+        margin-top: 2rem;
+      }
+      .vodafone-logo{
+          margin-left: 0;
+          margin-top: 1.5rem;
+      }
+  }
+  @media (min-width: 558px) and (max-width: 767px) {
+    position: relative;
+    padding: 1.5rem 2.2rem 1.5rem 7rem;
+    .rights {
+        text-align: center;
+        p {
+          width: 100%;
+          font-size: 1rem;
+        }
+      }
+    .company {
+        margin-right: 0;
+        margin-top: 2rem;
+        span{
+            font-size: 0.7rem;
+        }
+      }
+      .vodafone-logo{
+          margin-left: -2rem;
+          margin-top: 1.5rem;
+      }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding: 15px 30px 15px 80px;
+    position: relative;
+    .rights {
+        text-align: center;
+        p {
+          width: 100%;
+        }
+      }
+    .company {
+        margin-right: 0;
+        margin-top: 1.5rem;
+      }
+      .vodafone-logo{
+          margin-left: -1rem;
+          margin-top: 1rem;
+      }
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    padding: 15px 30px 15px 80px;
+    position: relative;
+    .rights {
+        text-align: center;
+        p {
+          width: 100%;
+        }
+      }
+    .company {
+        margin-right: 0;
+        margin-top: 1rem;
+      }
+      .vodafone-logo{
+          margin-left: -1rem;
+          margin-top: 0.5rem;
+      }
+  }
+}
+footer {
+  border: solid 1px #e6e6e6;
+  background-color: rgba(#d7d7d7, 0.8);
+  padding: 1.5rem 7.5rem 1.5rem 10rem;
+  margin: 5rem 0 0 0;
+  .vodafone-logo {
+    text-align: left;
+    margin-left: -5rem;
+    // span {
+    //   display: block;
+    //   margin-left: 7rem;
+    //   margin-bottom: 0.5rem;
+    //   font-size: 1.2rem;
+    //   font-weight: 500;
+    //   font-style: normal;
+    //   font-stretch: normal;
+    //   line-height: 1.84;
+    //   letter-spacing: normal;
+    //   color: #404040;
+    // }
+    img {
+      width: auto;
+      height: 3.2rem;
+    }
+  }
+  .rights {
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+     margin-top: 0.9rem;
+    p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-align: center;
+      color: #818181;
+    }
+  }
+  .company {
+    position: relative;
+    margin-right: -3rem;
+    margin-top: 0.8rem;
+    span {
+      font-size: 8px;
+      font-weight: 800;
+      line-height: 1.38;
+      color: #707070;
+    }
+    img {
+      width: 4.9rem;
+      height: 1.7rem;
+      position: absolute;
+      top: 1px;
+      margin-right: 5px;
+    }
+  }
+  @media (max-width: 399px) {
+    position: relative;
+    padding: 0.5rem 2rem;
+      .rights {
+        text-align: center;
+        p {
+          width: 100%;
+          font-size: 0.9rem;
+        }
+      }
+      .company {
+        margin-right: 0;
+        margin-top: 3rem;
+        span{
+            font-size: 0.6rem;
+        }
+      }
+      .vodafone-logo{
+          margin-left: 0;
+          margin-top: 2.5rem;
+          img {
+            width: auto;
+            height: 2.7rem;
+          }
+      }
+  }
+  @media (min-width: 400px) and (max-width: 480px) {
+    position: relative;
+    padding: 1rem 2rem;
+      .rights {
+        text-align: center;
+        p {
+          width: 100%;
+        }
+      }
+      .company {
+        margin-right: 0;
+        margin-top: 2.5rem;
+        span{
+            font-size: 0.8rem;
+        }
+      }
+      .vodafone-logo{
+          margin-left: 0;
+          margin-top: 2rem;
+      }
+  }
+  @media (min-width: 481px) and (max-width: 557px) {
+    position: relative;
+    padding: 1rem 2rem;
+      .rights {
+        text-align: center;
+        p {
+          width: 100%;
+        }
+      }
+      .company {
+        margin-right: 0;
+        margin-top: 2rem;
+      }
+      .vodafone-logo{
+          margin-left: 0;
+          margin-top: 1.5rem;
+      }
+  }
+  @media (min-width: 558px) and (max-width: 767px) {
+    position: relative;
+    padding: 1.5rem 2.2rem 1.5rem 7rem;
+    .rights {
+        text-align: center;
+        p {
+          width: 100%;
+          font-size: 1rem;
+        }
+      }
+    .company {
+        margin-right: 0;
+        margin-top: 2rem;
+        span{
+            font-size: 0.7rem;
+        }
+      }
+      .vodafone-logo{
+          margin-left: -2rem;
+          margin-top: 1.5rem;
+      }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding: 15px 30px 15px 80px;
+    position: relative;
+    .rights {
+        text-align: center;
+        p {
+          width: 100%;
+        }
+      }
+    .company {
+        margin-right: 0;
+        margin-top: 1.5rem;
+      }
+      .vodafone-logo{
+          margin-left: -1rem;
+          margin-top: 1rem;
+      }
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    padding: 15px 30px 15px 80px;
+    position: relative;
+    .rights {
+        text-align: center;
+        p {
+          width: 100%;
+        }
+      }
+    .company {
+        margin-right: 0;
+        margin-top: 1rem;
+      }
+      .vodafone-logo{
+          margin-left: -1rem;
+          margin-top: 0.5rem;
+      }
+  }
+}
+.responsive-footer{
+    @media (min-width: 767px) {
+        display: none;
     }
 }

@@ -9,6 +9,41 @@ jQuery(document).ready(function() {
   //     $("#selectExam").fadeOut();
   //   }
   // });
+  var footer = $('.responsive-footer'),
+      reg = $('.registration'),
+      height = $(window).height(),
+      width  = $(window).width();
+      if (width > 1920) {
+        reg.css({
+          marginTop: '100px',
+          marginBottom: '200px'
+        });
+      }
+
+      if (width < 480 && height < 800) {
+        footer.css({
+          position: 'fixed',
+          top: height - 120
+        });
+      } else if (width < 480 && height > 800) {
+        footer.css({
+          position: 'fixed',
+          top: height - 160
+        });
+      }
+       else if (width > 481 && width < 991){
+        footer.css({
+          position: 'fixed',
+          top: height - 130
+        });
+      }
+      else{
+        footer.css({
+          position: 'fixed',
+          top: height - 120
+        });
+      }
+      
   $("#openSideMenu").click(() => {
     $("aside").css({ right: 0 });
   });

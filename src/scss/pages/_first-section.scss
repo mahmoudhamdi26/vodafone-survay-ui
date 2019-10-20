@@ -285,25 +285,25 @@
     border: #1cc6bd solid 1.5px;
     display: none;
 }
-.custom-control-input:checked  ~ .custom-control-label::after {
+.custom-control-input:checked, .custom-control-input:hover  ~ .custom-control-label::after {
    display: block;
 }
-form .form-group .custom-control-input:checked  ~ .custom-control-label {
+form .form-group .custom-control-input:checked, form .form-group .custom-control-input:hover  ~ .custom-control-label {
    font-weight: 800;
 }
-.first-section .custom-control-input:focus ~ .custom-control-label::before {
+.first-section .custom-control-input:focus, .first-section .custom-control-input:hover ~ .custom-control-label::before {
     box-shadow: 0 0 0 0.2rem rgba(#0e8efd, 0.25);
   }
-.second-section .custom-control-input:focus ~ .custom-control-label::before {
+.second-section .custom-control-input:focus, .second-section .custom-control-input:hover ~ .custom-control-label::before {
     box-shadow: 0 0 0 0.2rem rgba(#fcd22f, 0.25);
   }
-.third-section .custom-control-input:focus ~ .custom-control-label::before {
+.third-section .custom-control-input:focus, .third-section .custom-control-input:hover ~ .custom-control-label::before {
     box-shadow: 0 0 0 0.2rem rgba(#8481ec, 0.25);
   }
-.forth-section .custom-control-input:focus ~ .custom-control-label::before {
+.forth-section .custom-control-input:focus, .forth-section .custom-control-input:hover ~ .custom-control-label::before {
     box-shadow: 0 0 0 0.2rem rgba(#ee4d4d, 0.25);
   }
-.fifth-section .custom-control-input:focus ~ .custom-control-label::before {
+.fifth-section .custom-control-input:focus, .fifth-section .custom-control-input:hover ~ .custom-control-label::before {
     box-shadow: 0 0 0 0.2rem rgba(#1cc6bd, 0.25);
   }
 .spinner{

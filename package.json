@@ -23,7 +23,7 @@
     "gulp-livereload": "^4.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
-    "moment": "^2.24.0"
+    "moment": "^2.29.2"
   },
   "dependencies": {
     "static-server": "^2.2.1"
